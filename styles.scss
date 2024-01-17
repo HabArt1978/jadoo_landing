@@ -1,0 +1,103 @@
+// google fonts
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+// variables
+$plus-jakarta-sans: "Plus Jakarta Sans";
+
+// templates
+%container-base-params {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// START header
+
+.header-container {
+  @extend %container-base-params;
+  @extend %flex-between;
+  height: 120px;
+
+  div {
+    @extend %flex-between;
+    color: #212832;
+    flex-basis: 70%;
+
+    nav {
+      width: 100%;
+
+      ul {
+        @extend %flex-between;
+        text-decoration: none;
+        font-family: $plus-jakarta-sans;
+
+        li {
+          font-size: 17px;
+          font-style: normal;
+          line-height: normal;
+          margin-top: auto;
+
+          a {
+            text-decoration: none;
+            font-weight: 600;
+
+            &.header-link {
+              overflow: hidden;
+              position: relative;
+              padding: 5px 0;
+            }
+
+            span {
+              &.header-link__line {
+                position: absolute;
+                display: block;
+              }
+            }
+
+            span {
+              &.header-link__line--top {
+                top: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #212832;
+              }
+
+              &.header-link__line--bottom {
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #212832;
+              }
+            }
+          }
+        }
+
+        li a.header-button {
+          border: 2px solid rgb(0, 0, 0, 0.6);
+          border-radius: 7px;
+          padding: 10px 20px;
+        }
+      }
+    }
+
+    select {
+      border: none;
+      outline: none;
+      font-family: $plus-jakarta-sans;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-left: 5%;
+    }
+  }
+}
+
+// END header
