@@ -1,0 +1,12 @@
+%container-base-params {
+  width: 100%;
+  max-width: $content_width;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

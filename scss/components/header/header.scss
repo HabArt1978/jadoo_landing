@@ -1,30 +1,8 @@
-// google fonts
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
-
-// variables
-$plus-jakarta-sans: "Plus Jakarta Sans";
-
-// templates
-%container-base-params {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-  border: 1px solid red;
-}
-
-%flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-// START header
-
 .header-container {
   @extend %container-base-params;
   @extend %flex-between;
   height: 120px;
+  padding: 0 10px;
 
   .logo-link {
     width: 115px;
@@ -46,7 +24,7 @@ $plus-jakarta-sans: "Plus Jakarta Sans";
       ul {
         @extend %flex-between;
         text-decoration: none;
-        font-family: $plus-jakarta-sans;
+        font-family: $header_font_family;
 
         li {
           font-size: 17px;
@@ -56,7 +34,6 @@ $plus-jakarta-sans: "Plus Jakarta Sans";
           a {
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.3s;
 
             &.header-link {
               overflow: hidden;
@@ -64,39 +41,37 @@ $plus-jakarta-sans: "Plus Jakarta Sans";
               position: relative;
               padding: 5px;
 
+              span {
+                &.header-link__line {
+                  position: absolute;
+                  display: block;
+                }
+
+                &.header-link__line--top {
+                  top: 0;
+                  left: -100%;
+                  width: 100%;
+                  height: 2px;
+                  background-color: rgb(250, 151, 3);
+                  transition: all 0.3s ease-out;
+                }
+
+                &.header-link__line--bottom {
+                  bottom: 0;
+                  right: -100%;
+                  width: 100%;
+                  height: 2px;
+                  background-color: rgb(250, 151, 3);
+                  transition: all 0.3s;
+                }
+              }
+
               &:hover .header-link__line--top {
                 left: 15%;
-                transition: all 0.3s ease-out;
               }
 
               &:hover .header-link__line--bottom {
                 right: 15%;
-                transition: all 0.3s;
-              }
-            }
-
-            span {
-              &.header-link__line {
-                position: absolute;
-                display: block;
-              }
-            }
-
-            span {
-              &.header-link__line--top {
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 2px;
-                background-color: rgb(250, 151, 3);
-              }
-
-              &.header-link__line--bottom {
-                bottom: 0;
-                right: -100%;
-                width: 100%;
-                height: 2px;
-                background-color: rgb(250, 151, 3);
               }
             }
           }
@@ -121,7 +96,7 @@ $plus-jakarta-sans: "Plus Jakarta Sans";
     select {
       border: none;
       outline: none;
-      font-family: $plus-jakarta-sans;
+      font-family: $header_font_family;
       font-size: 17px;
       font-style: normal;
       font-weight: 600;
@@ -129,5 +104,3 @@ $plus-jakarta-sans: "Plus Jakarta Sans";
     }
   }
 }
-
-// END header
