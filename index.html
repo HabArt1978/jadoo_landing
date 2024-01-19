@@ -15,7 +15,11 @@
   <header class="header-container">
 
     <a href="#" class="logo-link">
-      <img src="/svg/Logo.svg" alt="Jadoo company logo" />
+      <picture>
+        <source srcset="/svg/Logo.svg" media="(min-width: 1024px)" width="115" height="35">
+        <source srcset="/svg/Logo.svg" media="(min-width: 450px)" width="90" height="30">
+        <img src="/svg/Logo.svg" alt="Jadoo company logo" width="70" height="20" />
+      </picture>
     </a>
 
     <div>
@@ -71,6 +75,9 @@
         </ul>
       </nav>
 
+      <button class="menu-button">
+        <img src="/icons/menu_icon.svg" alt="menu icon">
+      </button>
 
     </div>
 

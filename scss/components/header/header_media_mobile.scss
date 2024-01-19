@@ -1,0 +1,37 @@
+@include mobile {
+  .header-container {
+    border: 1px solid orange;
+    height: 70px;
+    padding: 0 10px;
+
+    nav {
+      display: none;
+    }
+
+    div {
+      flex-basis: 0%;
+      .menu-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+        border: none;
+        background: transparent;
+        transition: all 150ms;
+
+        &:hover {
+          background: #f3f4f6;
+          transform: scale(1.1);
+        }
+
+        &:active {
+          background: #fca5a5;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

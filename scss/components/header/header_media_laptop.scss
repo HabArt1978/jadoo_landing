@@ -1,0 +1,30 @@
+@include laptop {
+  .header-container {
+    border: 1px solid blue;
+    height: 90px;
+    padding: 0 20px;
+
+    div {
+      flex-basis: 75%;
+      nav ul {
+        li {
+          font-size: 15px;
+          font-weight: 500;
+
+          & a.header-link {
+            padding: 3px;
+          }
+
+          & a.header-button {
+            padding: 6px 10px;
+          }
+        }
+      }
+
+      select {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+}

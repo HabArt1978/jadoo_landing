@@ -1,11 +1,6 @@
-@import "./common/reset.scss";
+@import "./common";
 
-@import "./common/fonts.scss";
-@import "./common/variables.scss";
-@import "./common/extends.scss";
-@import "./common/common.scss";
-
-@import "./components/header/header.scss";
+@import "./components/header";
 
 * {
   box-sizing: border-box;
