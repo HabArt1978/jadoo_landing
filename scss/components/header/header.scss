@@ -1,15 +1,13 @@
 .header-container {
   @extend %container_base_styles;
   @extend %flex-between;
-  border: 1px solid red;
   height: 120px;
-  padding: 0 10px;
 
   .logo-link {
     margin-right: 10px;
     transition: 150ms;
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
     &:active {
       transform: scale(1);
@@ -27,7 +25,7 @@
       ul {
         @extend %flex-between;
         text-decoration: none;
-        font-family: $header_font_family;
+        font-family: $header_font;
 
         li {
           font-size: 17px;
@@ -99,11 +97,12 @@
     select {
       border: none;
       outline: none;
-      font-family: $header_font_family;
+      font-family: $header_font;
       font-size: 17px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
+      background: inherit;
       transition: 150ms;
 
       &:hover {

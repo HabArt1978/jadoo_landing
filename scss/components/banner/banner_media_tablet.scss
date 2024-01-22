@@ -1,0 +1,73 @@
+@include tablet {
+  .banner-section {
+    .description {
+      h1 {
+        font-size: 16px;
+        width: 200px;
+      }
+
+      h2 {
+        font-size: 40px;
+        line-height: 45px;
+        width: 270px;
+        padding-top: 2%;
+        text-shadow: 0px 0px 8px white;
+      }
+
+      .banner-paragraph {
+        background: #fff;
+        opacity: 0.9;
+
+        p {
+          font-size: 14px;
+          width: 400px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .description {
+      .group-button {
+        a {
+          margin-left: -10px;
+          transform: scale(0.9);
+
+          &:hover {
+            transform: scale(0.95);
+          }
+        }
+        .play-button {
+          margin-left: 25px;
+          transform: scale(0.9);
+          color: $tw_gray_800;
+          background: #fff;
+          border-radius: 10px;
+          opacity: 0.8;
+          padding: 4px;
+
+          &:hover {
+            transform: scale(0.95);
+          }
+
+          svg {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    .banner-bg-image {
+      top: -14%;
+
+      .airplane_1 {
+        top: -2%;
+        left: 20%;
+      }
+
+      .airplane_2 {
+        top: 17%;
+        right: 0%;
+      }
+    }
+  }
+}
