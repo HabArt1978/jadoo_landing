@@ -2,8 +2,7 @@
     @extend %container_base_styles;
     display: flex;
     flex-direction: column;
-    padding: 150px 0px;
-
+    margin-top: 120px;
     .category-header {
         display: flex;
         flex-direction: column;

@@ -1,12 +1,11 @@
 %container_base_styles {
-  width: 100%;
-  max-width: $content_width;
-  margin: 0 auto;
-  padding: 0 10px;
+    max-width: $content_width;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 %flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
