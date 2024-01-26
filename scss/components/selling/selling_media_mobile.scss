@@ -14,9 +14,16 @@
         }
         // .top-selling__column
         &__column {
-            margin: 0;
             transform: scale(0.7);
-            margin: -16%;
+            margin: 0;
+
+            &:not(:first-child) {
+                margin-top: -28%;
+            }
+
+            &:first-child {
+                margin-top: -15%;
+            }
 
             &:hover {
                 transform: scale(0.75);

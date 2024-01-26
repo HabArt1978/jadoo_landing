@@ -1,2 +1,162 @@
 @include mobile {
+    .tour-booking-section {
+        @extend %container_base_styles;
+        padding: 0;
+        margin-top: 0px;
+    }
+    .tour-booking {
+        // .tour-booking__row
+        &__row {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 130px;
+        }
+        // .tour-booking__column
+        &__column {
+            margin: 0 auto;
+        }
+        &__header {
+            text-align: center;
+        }
+        // .tour-booking__title
+        &__title {
+            font-size: 13px;
+            padding-left: 5px;
+        }
+        // .tour-booking__second-title
+        &__second-title {
+            font-size: 24px;
+            margin-top: 12px;
+        }
+        // .tour-booking__item-icon
+        &__item-icon {
+            transform: scale(0.8);
+            margin-right: 15px;
+        }
+        // .tour-booking__item-title
+        &__item-title {
+            font-size: 14px;
+        }
+        // .tour-booking__item-subtitle
+        &__item-subtitle {
+            font-size: 12px;
+        }
+        &__card-content {
+            padding: 10px auto;
+        }
+        // .tour-booking__card
+        &__card {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: auto;
+        }
+        // .tour-booking__first-card
+        &__first-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 90vw;
+            border-radius: 0px;
+            background: none;
+            box-shadow: none;
+            margin: 0 auto;
+
+            & img {
+                max-width: 100%;
+                padding: 0;
+            }
+        }
+        // .tour-booking__card-title
+        &__card-title {
+            font-size: 14px;
+        }
+        // .tour-booking__details
+        &__details {
+            font-size: 12px;
+        }
+        // .tour-booking__social
+        &__social {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+
+            div {
+                &:not(:last-child) {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        // .tour-booking__feedback
+        &__feedback {
+            margin-top: 10px;
+
+            img {
+                padding: 0;
+            }
+        }
+        // .tour-booking__card-subtitle
+        &__card-subtitle {
+            margin-left: 10px;
+        }
+        // .tour-booking__likes-button
+        &__likes-button {
+            background-color: inherit;
+        }
+        // .tour-booking__second-card
+        &__second-card {
+            position: initial;
+            max-width: 263px;
+            text-align: start;
+            margin: 0 auto;
+
+            max-width: 100vw;
+            border-radius: 15px;
+            margin-top: 10px;
+            img {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+        }
+        // .tour-booking__progress
+        &__progress {
+            max-width: 100%;
+        }
+        &__second-card-description {
+            font-size: 12px;
+        }
+        // .tour-booking__second-card-title
+        &__second-card-title {
+            font-size: 14px;
+        }
+        // .tour-booking__progress-tittle
+        &__progress-title {
+            margin-top: 15px;
+            p {
+                font-size: 12px;
+            }
+        }
+        // .tour-booking__progress-line
+        &__progress-line {
+            img {
+                min-width: 100px;
+                height: 5px;
+                flex-shrink: 0;
+            }
+        }
+        // .tour-booking__card-background
+        &__background {
+            top: -10%;
+            left: 0%;
+            max-width: 250px;
+            height: 320px;
+
+            filter: blur(75px);
+        }
+    }
+    .top-selling__spring-image {
+        display: none;
+    }
 }

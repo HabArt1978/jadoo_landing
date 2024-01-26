@@ -1,7 +1,14 @@
+@media (min-width: $breakpoint_md) and (max-width: 1246px) {
+    .top-selling-section {
+        overflow: hidden;
+    }
+}
+
 .top-selling-section {
     @extend %container_base_styles;
     margin-top: 120px;
 }
+
 .top-selling {
     // .top-selling__body
     &__body {
@@ -46,7 +53,6 @@
         box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.09);
         border-radius: 20px;
         transition: 150ms;
-        margin: 0 20px 40px 20px;
 
         &:hover {
             transform: scale(1.05);
