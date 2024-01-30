@@ -11,6 +11,58 @@
 
 <body>
     <div class="container">
+        <div class="drawer">
+            <div class="drawer__backdrop"></div>
+
+            <div class="drawer__menu">
+                <button class="drawer__close-button">
+                    <img src="./public/icons/drawer/close.svg" alt="drawer close button">
+                </button>
+
+                <ul class="drawer__link-list">
+                    <li>
+                        <a href="#" class="drawer__link-item">
+                            <img src="/icons/drawer/map.svg" alt="map icon">
+                            Desitnations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="drawer__link-item">
+                            <img src="/icons/drawer/concierge.svg" alt="hotels icon">
+                            Hotels
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="drawer__link-item">
+                            <img src="/icons/drawer/flights.svg" alt="flights icon">
+                            Flights
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="drawer__link-item">
+                            <img src="/icons/drawer/apartment.svg" alt="bookings icon">
+                            Bookings
+                        </a>
+                    </li>
+
+                    <span class="drawer__divider"></span>
+
+                    <li>
+                        <a href="#" class="drawer__link-item">
+                            <img src="/icons/drawer/login.svg" alt="login icon">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="drawer__link-item">
+                            <img src="/icons/drawer/person_add.svg" alt="person add icon">
+                            Sign up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div class="bg-blur-top"></div>
         <div class="bg-blur-bottom"></div>
         <div class="bg-color-1">
@@ -84,7 +136,7 @@
                     </ul>
                 </nav>
 
-                <button class="menu-button">
+                <button class="menu-button" id="menu-button" x-on:click="isDrawerOpen = true">
                     <img src="/icons/menu_button_icon.svg" alt="menu icon">
                 </button>
 
@@ -115,7 +167,8 @@
                         </h2>
                         <div class="banner-paragraph">
                             <p>
-                                Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it
+                                Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen
+                                it
                                 engrossed
                                 listening.
                                 Park gate sell they west hard for the.
@@ -495,9 +548,11 @@
 
                                 <div class="testimonials__card-item">
                                     <div class="testimonials__text-container">
-                                        <p class="testimonials__text">“On the Windows talking painted pasture yet its
+                                        <p class="testimonials__text">“On the Windows talking painted pasture yet
+                                            its
                                             express
-                                            parties use. Sure last upon he same as knew next. Of believed or diverted
+                                            parties use. Sure last upon he same as knew next. Of believed or
+                                            diverted
                                             no.”
                                         </p>
                                     </div>
@@ -508,9 +563,11 @@
                                 </div>
                                 <div class="testimonials__card-item">
                                     <div class="testimonials__text-container">
-                                        <p class="testimonials__text">“On the Windows talking painted pasture yet its
+                                        <p class="testimonials__text">“On the Windows talking painted pasture yet
+                                            its
                                             express
-                                            parties use. Sure last upon he same as knew next. Of believed or diverted
+                                            parties use. Sure last upon he same as knew next. Of believed or
+                                            diverted
                                             no.”
                                         </p>
                                     </div>
@@ -698,6 +755,7 @@
 
         </footer>
         <!-- END FOOTER -->
+
     </div>
 
     <script type="module" src="/main.js"></script>
