@@ -1,7 +1,4 @@
 @include mobile {
-    .top-selling-section {
-        margin-top: 100px;
-    }
     .top-selling {
         &__title {
             font-size: 13px;
@@ -14,19 +11,11 @@
         }
         // .top-selling__column
         &__column {
-            transform: scale(0.7);
-            margin: 0;
-
-            &:not(:first-child) {
-                margin-top: -28%;
-            }
-
-            &:first-child {
-                margin-top: -15%;
-            }
+            transform: scale(0.8);
+            margin-top: -30px;
 
             &:hover {
-                transform: scale(0.75);
+                transform: scale(0.85);
             }
         }
         // .top-selling__offer

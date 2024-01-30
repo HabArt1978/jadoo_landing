@@ -1,6 +1,11 @@
 @include mobile {
     .category-section {
-        margin-top: 30px;
+        margin-top: 100px;
+
+        .criss-cross {
+            display: none;
+        }
+
         .category-header {
             h1 {
                 font-size: 12px;

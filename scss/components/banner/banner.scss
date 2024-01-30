@@ -17,7 +17,7 @@
             font-weight: 700;
             line-height: normal;
             text-transform: uppercase;
-            width: 410px;
+            max-width: 410px;
         }
 
         h2 {
@@ -28,7 +28,7 @@
             font-weight: 700;
             line-height: 89px;
             letter-spacing: -3.36px;
-            width: 545px;
+            max-width: 545px;
             padding-top: 2%;
         }
 
@@ -39,7 +39,7 @@
             font-style: normal;
             font-weight: 500;
             line-height: 30px;
-            width: 477px;
+            max-width: 477px;
             padding-top: 2%;
         }
 
@@ -113,9 +113,6 @@
             top: 16%;
             right: -0.5%;
             z-index: -20;
-        }
-
-        .traveller-image {
         }
     }
 }

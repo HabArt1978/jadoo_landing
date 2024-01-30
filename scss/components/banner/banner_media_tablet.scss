@@ -1,73 +1,75 @@
 @include tablet {
-  .banner-section {
-    .description {
-      h1 {
-        font-size: 16px;
-        width: 200px;
-      }
+    .banner-section {
+        .description {
+            margin: 0;
+            h1 {
+                text-align: center;
+                margin: 0 auto;
+                font-size: 16px;
+            }
 
-      h2 {
-        font-size: 40px;
-        line-height: 45px;
-        width: 270px;
-        padding-top: 2%;
-        text-shadow: 0px 0px 8px white;
-      }
+            h2 {
+                font-size: 40px;
+                line-height: 55px;
+                margin: 0 auto;
+                margin-top: 400px;
+                text-align: center;
+                letter-spacing: -1px;
+            }
 
-      .banner-paragraph {
-        background: #fff;
-        opacity: 0.9;
-
-        p {
-          font-size: 14px;
-          width: 400px;
-          line-height: 25px;
+            p {
+                font-size: 14px;
+                margin: 0 auto;
+                margin-top: 5px;
+                text-align: center;
+            }
         }
-      }
-    }
 
-    .description {
-      .group-button {
-        a {
-          margin-left: -10px;
-          transform: scale(0.9);
+        .group-button {
+            justify-content: center;
+            a {
+                margin-left: -10px;
+                transform: scale(0.9);
 
-          &:hover {
-            transform: scale(0.95);
-          }
+                &:hover {
+                    transform: scale(0.95);
+                }
+            }
+
+            .play-button {
+                margin-left: 25px;
+                transform: scale(0.9);
+
+                &:hover {
+                    transform: scale(0.95);
+                }
+
+                svg {
+                    margin-right: 15px;
+                }
+            }
         }
-        .play-button {
-          margin-left: 25px;
-          transform: scale(0.9);
-          color: $tw_gray_800;
-          background: #fff;
-          border-radius: 10px;
-          opacity: 0.8;
-          padding: 4px;
 
-          &:hover {
-            transform: scale(0.95);
-          }
+        .banner-bg-image {
+            top: 5%;
+            right: 20%;
+            transform: translateX(10%);
+            z-index: -10;
 
-          svg {
-            margin-right: 15px;
-          }
+            .airplane_1 {
+                top: 7%;
+                left: 18%;
+                z-index: -20;
+            }
+
+            .airplane_2 {
+                top: 16%;
+                right: -0.5%;
+                z-index: -20;
+            }
         }
-      }
+
+        .bg-image {
+        }
     }
-
-    .banner-bg-image {
-      top: -14%;
-
-      .airplane_1 {
-        top: -2%;
-        left: 20%;
-      }
-
-      .airplane_2 {
-        top: 17%;
-        right: 0%;
-      }
-    }
-  }
 }

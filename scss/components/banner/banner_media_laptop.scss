@@ -4,6 +4,7 @@
             h1 {
                 font-size: 16px;
                 width: 450px;
+                text-shadow: 0 0 5px white;
             }
 
             h2 {
@@ -12,11 +13,21 @@
                 line-height: 70px;
                 width: 450px;
                 padding-top: 2%;
+                text-shadow: 0 0 10px white;
             }
 
-            p {
-                font-size: 14px;
-                width: 400px;
+            .banner-paragraph {
+                max-width: 420px;
+                background-color: #fff;
+                border-radius: 0 15px 15px 0;
+                opacity: 0.8;
+
+                p {
+                    color: $tw_gray_800;
+                    font-size: 14px;
+                    padding-right: 10px;
+                    max-width: 420px;
+                }
             }
         }
 
@@ -32,11 +43,16 @@
                 }
 
                 .play-button {
+                    background: #fff;
                     margin-left: 25px;
-                    transform: scale(0.9);
+                    padding: 10px;
+                    border-radius: 15px;
+                    transform: scale(0.8);
+                    color: $tw_gray_800;
+                    opacity: 0.8;
 
                     &:hover {
-                        transform: scale(0.95);
+                        transform: scale(0.85);
                     }
 
                     svg {

@@ -2,6 +2,7 @@
     .testimonials-section {
         @extend %container_base_styles;
         margin-top: 150px;
+        padding-bottom: 0px;
     }
     .testimonials {
         &__rows {

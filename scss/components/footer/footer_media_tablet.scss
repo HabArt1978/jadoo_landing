@@ -1,0 +1,59 @@
+@include tablet {
+    .footer-section {
+        margin-top: 150px;
+    }
+    .footer {
+        // .footer__first-line
+        &__first-line {
+            flex-direction: column;
+        }
+        // .footer__header
+        &__header {
+            margin: 0 auto;
+            text-align: center;
+        }
+        // .footer__header-title
+        &__header-title {
+            h2 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+        // .footer__columns
+        &__columns {
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+        // .footer__column-item
+        &__column-item {
+            h3 {
+                font-size: 18px;
+            }
+
+            ul {
+                margin-top: 18px;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+
+        // .footer__rights
+        &__rights {
+            margin: 80px auto 40px;
+        }
+
+        // .footer__discover
+        &__discover {
+            width: 215px;
+            margin: 50px auto 0;
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+    }
+}

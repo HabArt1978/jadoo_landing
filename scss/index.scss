@@ -1,11 +1,16 @@
 @import "./common";
 
+@import "./components/container";
+
 @import "./components/header";
 @import "./components/banner";
 @import "./components/category";
 @import "./components/selling";
 @import "./components/booking";
 @import "./components/testimonials";
+@import "./components/partners";
+@import "./components/subscription";
+@import "./components/footer";
 
 * {
     box-sizing: border-box;

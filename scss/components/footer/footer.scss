@@ -1,0 +1,181 @@
+.footer-section {
+    @extend %container_base_styles;
+
+    margin-top: 180px;
+    padding: 0 10px;
+}
+.footer {
+    // .footer__row
+    &__row {
+        margin: 0 30px;
+    }
+
+    &__header {
+    }
+
+    &__first-line {
+        display: flex;
+    }
+    &__header-title {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    // .footer__columns
+    &__columns {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    // .footer__column-item
+    &__column-item {
+        margin-top: 20px;
+
+        h3 {
+            color: $tw_gray_800;
+            font-family: $base_font;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 124.5%; /* 26.145px */
+        }
+
+        ul {
+            margin-top: 28px;
+        }
+
+        li {
+            margin-top: 12px;
+            padding: 2px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $tw_gray_500;
+            font-family: $base_font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 124.5%; /* 22.41px */
+            transition: 50ms;
+
+            &:hover {
+                border-bottom: 2px solid $tw_gray_800;
+            }
+        }
+    }
+    // .footer__header
+    &__header-title {
+        h2 {
+            color: $tw_gray_800;
+            font-family: $base_font;
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        p {
+            max-width: 207px;
+            color: $tw_gray_500;
+            font-family: $base_font;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 124.5%; /* 16.185px */
+        }
+    }
+
+    // .footer__discover
+    &__discover {
+        margin-top: 10px;
+
+        h2 {
+            color: $tw_gray_500;
+            font-family: $base_font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 124.5%; /* 24.9px */
+            letter-spacing: 0.1px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .instagram_link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: conic-gradient(
+                from 180deg at 50% 50%,
+                #b8d2f1 0deg,
+                #f289aa 60.00000178813934deg,
+                #c68bf0 106.09081864356995deg,
+                #d164da 153.7500035762787deg,
+                #c963e8 221.24999284744263deg,
+                #bfc2e8 258.75deg,
+                #ffc999 288.7499928474426deg,
+                #d0d8c9 315deg,
+                #bad0f1 334.13365602493286deg,
+                #ced8cb 358.9677572250366deg
+            );
+            width: 45px;
+            height: 45px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            margin-top: 6px;
+        }
+    }
+
+    // .footer_social
+    &_social {
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        li {
+            margin: 0px;
+            transition: 100ms;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__stores {
+        display: flex;
+        justify-content: space-between;
+        width: 215px;
+
+        a {
+            transition: 150ms;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    // .footer__rights
+    &__rights {
+        margin: 100px auto 50px;
+        text-align: center;
+
+        a {
+            color: $tw_gray_500;
+            font-family: $base_font;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 124.5%; /* 17.43px */
+            text-decoration: none;
+            transition: 50ms;
+
+            &:hover {
+                border-bottom: 2px solid $tw_gray_800;
+            }
+        }
+    }
+}

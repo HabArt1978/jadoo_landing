@@ -1,0 +1,24 @@
+@include mobile {
+    .partners-section {
+        padding: 100px 10px;
+    }
+    .partners__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+    }
+    .partners__item {
+        transform: scale(0.8);
+
+        &:nth-child(4) {
+            display: none;
+        }
+
+        &:nth-child(5) {
+            display: none;
+        }
+    }
+}
