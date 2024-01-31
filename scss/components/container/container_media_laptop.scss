@@ -1,0 +1,37 @@
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container {
+        .bg-blur-top {
+            top: -2%;
+            left: -30%;
+        }
+
+        .bg-color-1 {
+            top: 0%;
+            right: -25%;
+        }
+
+        .bg-blur-bottom {
+            bottom: -2%;
+            right: -5%;
+        }
+    }
+}
+
+@include laptop {
+    .container {
+        .bg-blur-top {
+            top: -2%;
+            left: -40%;
+        }
+
+        .bg-color-1 {
+            top: 0%;
+            right: -30%;
+        }
+
+        .bg-blur-bottom {
+            bottom: -2%;
+            right: -40%;
+        }
+    }
+}

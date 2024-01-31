@@ -1,0 +1,27 @@
+@include laptop {
+    .tour-booking {
+        // .tour-booking__second-title
+        &__second-title {
+            font-size: 45px;
+        }
+
+        // .tour-booking__card
+        &__card {
+            max-width: 370px;
+        }
+        // .tour-booking__first-card
+        &__first-card {
+            max-width: 100%;
+        }
+
+        // .tour-booking__second-card
+        &__second-card {
+            bottom: -27%;
+            left: 25%;
+        }
+
+        &__background {
+            left: -10%;
+        }
+    }
+}

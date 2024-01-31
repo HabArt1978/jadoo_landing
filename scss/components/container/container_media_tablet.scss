@@ -1,0 +1,36 @@
+@include tablet {
+    .container {
+        .bg-blur-top {
+            top: -2%;
+            left: -40%;
+            @media (min-width: 550px) and (max-width: 660px) {
+                top: -2%;
+                left: -50%;
+            }
+            @media (min-width: 450px) and (max-width: 550px) {
+                top: 0%;
+                left: -70%;
+            }
+        }
+
+        .bg-color-1 {
+            top: -1%;
+            right: -50%;
+
+            @media (min-width: 550px) and (max-width: 660px) {
+                top: 0%;
+                right: -70%;
+            }
+
+            @media (min-width: 450px) and (max-width: 550px) {
+                top: 0%;
+                right: -100%;
+            }
+        }
+
+        .bg-blur-bottom {
+            bottom: -2%;
+            right: -40%;
+        }
+    }
+}

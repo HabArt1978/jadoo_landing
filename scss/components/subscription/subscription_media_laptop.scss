@@ -1,0 +1,43 @@
+@include laptop {
+    .subscription {
+        // .subscription__body
+        &__body {
+        }
+        // .subscription__title
+        &__title {
+            font-size: 28px;
+        }
+        // .subscription__form-container
+        &__form-container {
+            form {
+                img {
+                    top: 21px;
+                }
+                input {
+                    height: 60px;
+                }
+                button {
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+    .subscription-section {
+        &__first-ellipses {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            opacity: 0.2;
+        }
+        // .subscription-bg__second-ellipses
+        &__second-ellipses {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 0;
+            opacity: 0.2;
+        }
+    }
+}

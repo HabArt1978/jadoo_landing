@@ -1,0 +1,85 @@
+@include tablet {
+    .tour-booking {
+        // .tour-booking__row
+        &__row {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 130px;
+        }
+        // .tour-booking__column
+        &__column {
+            margin: 0 auto;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 16px;
+        }
+        // .tour-booking__second-title
+        &__second-title {
+            text-align: center;
+            font-size: 40px;
+        }
+        // .tour-booking__item
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            margin-top: 30px;
+        }
+        // .tour-booking__item-title
+        &__item-title {
+            font-size: 15px;
+        }
+        // .tour-booking__item-subtitle
+        &__item-subtitle {
+            font-size: 14px;
+        }
+        // .tour-booking__card
+        &__card {
+            width: 370px;
+            position: relative;
+            margin-top: 55px;
+        }
+        // .tour-booking__card-title
+        &__card-title {
+            font-size: 16px;
+        }
+        // .tour-booking__details
+        &__details {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        // .tour-booking__feedback
+        &__feedback {
+            margin-top: 10px;
+        }
+        // .tour-booking__likes-image
+        &__likes-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+        }
+        // .tour-booking__second-card
+        &__second-card {
+            bottom: -30%;
+            left: 14%;
+        }
+        // .tour-booking__second-card-description
+        &__second-card-description {
+            font-size: 13px;
+        }
+        // .tour-booking__second-card-title
+        &__second-card-title {
+            font-size: 16px;
+        }
+        // .tour-booking__card-background
+        &__background {
+            top: -10%;
+            left: 0%;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@include mobile {
+    .banner-section {
+        .description {
+            margin: 0;
+            h1 {
+                font-size: 14px;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 35px;
+                width: 100%;
+                text-align: center;
+                margin: auto;
+                margin-top: 350px;
+                letter-spacing: -1.5px;
+                word-spacing: 3px;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 20px;
+                padding: 0 10px;
+                width: 100%;
+                text-align: justify;
+                margin-top: 10px;
+            }
+        }
+
+        .description {
+            .group-button {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 10px;
+
+                a {
+                    transform: scale(0.9);
+                    padding: 15px 10px;
+                    flex-basis: 50%;
+                    text-align: center;
+                    font-size: 14px;
+                    width: 100%;
+
+                    &:hover {
+                        transform: scale(0.95);
+                    }
+                }
+
+                .play-button {
+                    margin-left: 0px;
+                    justify-content: start;
+                    flex-basis: 50%;
+                    font-size: 16px;
+                    font-weight: 600;
+                    width: 100%;
+                    transform: scale(0.8);
+
+                    &:hover {
+                        transform: scale(0.85);
+                    }
+
+                    svg {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .banner-bg-image {
+            top: 6%;
+
+            .airplane_1 {
+                top: 0%;
+                left: 20%;
+            }
+
+            .airplane_2 {
+                top: 10%;
+                right: 0%;
+            }
+
+            .bg-image {
+            }
+        }
+    }
+}

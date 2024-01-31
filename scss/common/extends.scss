@@ -1,0 +1,11 @@
+%container_base_styles {
+    max-width: $content_width;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+%flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

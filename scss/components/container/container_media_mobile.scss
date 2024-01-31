@@ -1,0 +1,17 @@
+@include mobile {
+    .container {
+        .bg-blur-top {
+            top: -3%;
+            left: -100%;
+        }
+
+        .bg-color-1 {
+            display: none;
+        }
+
+        .bg-blur-bottom {
+            bottom: -4%;
+            right: -80%;
+        }
+    }
+}
