@@ -2,6 +2,8 @@
 
 @import "./components/container";
 @import "./components/drawer";
+@import "./components/modal";
+@import "./components/card";
 
 @import "./components/header";
 @import "./components/banner";
@@ -15,4 +17,8 @@
 
 * {
     box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
 }

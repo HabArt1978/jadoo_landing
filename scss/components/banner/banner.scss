@@ -2,6 +2,7 @@
     @extend %container_base_styles;
     position: relative;
     padding-bottom: 10px;
+    pointer-events: all;
 
     .description {
         display: flex;
@@ -46,7 +47,7 @@
         .group-button {
             display: flex;
             align-items: center;
-            padding-top: 3%;
+            padding-top: 40px;
 
             a {
                 color: white;
@@ -65,7 +66,7 @@
                 &:hover {
                     background-color: #f97316;
                     opacity: 0.9;
-                    transform: scale(1.05);
+                    transform: translateY(-3px);
                 }
             }
 
@@ -85,7 +86,7 @@
                 transition: 200ms;
 
                 &:hover {
-                    transform: scale(1.05);
+                    transform: translateY(-3px);
                 }
 
                 svg {

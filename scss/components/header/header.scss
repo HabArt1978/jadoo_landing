@@ -16,7 +16,6 @@
 
     div {
         @extend %flex-between;
-        color: #212832;
         flex-basis: 70%;
 
         nav {
@@ -41,6 +40,7 @@
                             display: flex;
                             position: relative;
                             padding: 5px;
+                            color: $link_color;
                         }
 
                         span {
@@ -84,6 +84,7 @@
                     border: 2px solid rgb(0, 0, 0, 0.6);
                     border-radius: 7px;
                     transition: all 0.2s ease-out;
+                    color: #212832;
 
                     &:hover {
                         border: 2px solid rgb(0, 0, 0, 0);

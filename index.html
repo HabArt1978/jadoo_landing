@@ -11,58 +11,6 @@
 
 <body>
     <div class="container">
-        <div class="drawer">
-            <div class="drawer__backdrop"></div>
-
-            <div class="drawer__menu">
-                <button class="drawer__close-button">
-                    <img src="./public/icons/drawer/close.svg" alt="drawer close button">
-                </button>
-
-                <ul class="drawer__link-list">
-                    <li>
-                        <a href="#" class="drawer__link-item">
-                            <img src="/icons/drawer/map.svg" alt="map icon">
-                            Desitnations
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="drawer__link-item">
-                            <img src="/icons/drawer/concierge.svg" alt="hotels icon">
-                            Hotels
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="drawer__link-item">
-                            <img src="/icons/drawer/flights.svg" alt="flights icon">
-                            Flights
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="drawer__link-item">
-                            <img src="/icons/drawer/apartment.svg" alt="bookings icon">
-                            Bookings
-                        </a>
-                    </li>
-
-                    <span class="drawer__divider"></span>
-
-                    <li>
-                        <a href="#" class="drawer__link-item">
-                            <img src="/icons/drawer/login.svg" alt="login icon">
-                            Login
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="drawer__link-item">
-                            <img src="/icons/drawer/person_add.svg" alt="person add icon">
-                            Sign up
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
         <div class="bg-blur-top"></div>
         <div class="bg-blur-bottom"></div>
         <div class="bg-color-1">
@@ -115,14 +63,14 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="header-link">
+                            <a href="#" class="header-link" id="loginBtn">
                                 <span class="header-link__line header-link__line--top"></span>
                                 <span class="header-link__line header-link__line--bottom"></span>
                                 Login
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="header-button">
+                            <a href="#" class="header-button" id="signUpBtn">
                                 Sign up
                             </a>
                         </li>
@@ -141,7 +89,6 @@
                 </button>
 
             </div>
-
         </header>
         <!-- END HEADER -->
 
@@ -757,6 +704,150 @@
         <!-- END FOOTER -->
 
     </div>
+
+    <!-- NAVIGATION DRAWER -->
+    <div class="drawer">
+        <div class="drawer__backdrop"></div>
+
+        <div class="drawer__menu">
+            <button class="drawer__close-button">
+                <img src="/icons/close.svg" alt="drawer close button">
+            </button>
+
+            <ul class="drawer__link-list">
+                <li>
+                    <a href="#" class="drawer__link-item">
+                        <img src="/icons/drawer/map.svg" alt="map icon">
+                        Desitnations
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="drawer__link-item">
+                        <img src="/icons/drawer/concierge.svg" alt="hotels icon">
+                        Hotels
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="drawer__link-item">
+                        <img src="/icons/drawer/flights.svg" alt="flights icon">
+                        Flights
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="drawer__link-item">
+                        <img src="/icons/drawer/apartment.svg" alt="bookings icon">
+                        Bookings
+                    </a>
+                </li>
+
+                <span class="drawer__divider"></span>
+
+                <li>
+                    <a href="#" class="drawer__link-item">
+                        <img src="/icons/drawer/login.svg" alt="login icon">
+                        Login
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="drawer__link-item">
+                        <img src="/icons/drawer/person_add.svg" alt="person add icon">
+                        Sign up
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END NAVIGATION DRAWER -->
+
+    <!-- MODALS -->
+    <div class="modal" id="youtubePlayerModal">
+        <div class="modal__backdrop"></div>
+
+        <div class="modal__wrapper" style="width: 600px; height: 450px;">
+            <button class="modal__close-btn">
+                <img src="/icons/close.svg" alt="close icon">
+            </button>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/he-aCCA2ONI?si=FXxEmWiWEAq5clDg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="modal" id="loginModal">
+        <div class="modal__backdrop"></div>
+
+        <div class="modal__wrapper">
+            <button class="modal__close-btn">
+                <img src="/icons/close.svg" alt="close icon">
+            </button>
+            <div class="modal__card card">
+                <h3 class="card__header">
+                    Login
+                </h3>
+
+                <div class="card__body">
+                    <form action="#" id="loginForm">
+                        <div>
+                            <label for="email">
+                                Email
+                            </label>
+                            <input class="modal-card__input" type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="password">
+                                Password
+                            </label>
+                            <input class="modal-card__input" type="password" id="password" name="password">
+                        </div>
+                        <button type="submit" class="modal-card__button">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="signUpModal">
+        <div class="modal__backdrop"></div>
+
+        <div class="modal__wrapper">
+            <button class="modal__close-btn">
+                <img src="/icons/close.svg" alt="close icon">
+            </button>
+            <div class="modal__card card">
+                <h3 class="card__header">
+                    Sign up
+                </h3>
+
+                <div class="card__body">
+                    <form action="#" id="signUpForm">
+                        <div>
+                            <label for="email">
+                                Email
+                            </label>
+                            <input class="sign-up-card__input" type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="password">
+                                Password
+                            </label>
+                            <input class="sign-up-card__input" type="password" id="password" name="password">
+                        </div>
+                        <div>
+                            <label for="confirm password">
+                                Confirm password
+                            </label>
+                            <input class="sign-up-card__input" type="password" id="confirm password"
+                                name="confirm password">
+                        </div>
+                        <button type="submit" class="sign-up-card__button">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END MODALS -->
 
     <script type="module" src="/main.js"></script>
 </body>

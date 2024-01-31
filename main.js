@@ -1,5 +1,7 @@
 import initDrawer from "./src/drawer";
+import initModals from "./src/modal";
 
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
     initDrawer();
-};
+    initModals();
+});
